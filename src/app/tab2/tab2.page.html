@@ -1,17 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-searchbar></ion-searchbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content  [fullscreen]="true">
+  <ion-grid *ngFor = "let n of a">
+    <ion-row>
+      <ion-col >
+          <img (click)="big($event)" src="https://picsum.photos/id/1/100/100">
+      </ion-col>
+      <ion-col>
+        <img (click)="big($event)" src="https://picsum.photos/id/2/100/100">
+      </ion-col>
+      <ion-col>
+        <img (click)="big($event)" src="https://picsum.photos/id/11/100/100">
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
 </ion-content>

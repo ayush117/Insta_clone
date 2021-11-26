@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="logo-instagram"></ion-icon>
+      {{username}} 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-grid class="profile-intro">
+  <ion-row>
+    <ion-col col-4>
+      <img class="profile-photo" [src]="img">
+    </ion-col>
+    <ion-col col-8>
+      <div class="profile-info">
+        <div class="post-count info-square">
+          <p>
+            <strong>1</strong><br>
+            <em>post</em>
+          </p>
+        </div>
+        <div class="follower-count info-square">
+          <p>
+            <strong>1532</strong><br>
+            <em>followers</em>
+          </p>
+        </div>
+        <div class="following-count info-square">
+          <p>
+            <strong>200</strong><br>
+            <em>following</em>
+          </p>
+        </div>
+      </div>
+      <div>
+        <button ion-button class="follow-button">Follow</button>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div class="more-details">
+  <p class="user-name"><strong>{{name}}</strong></p>
+  <p class="user-bio">{{age}}</p>
+</div>
+
+<ion-segment color="primary">
+  <ion-segment-button value="posts" selected>
+    <ion-icon name="grid"></ion-icon>    
+  </ion-segment-button>
+  <ion-segment-button value="tagged">
+    <ion-icon name="people-circle-outline"></ion-icon>
+    </ion-segment-button>
+  <ion-segment-button value="bookmark">
+    <ion-icon name="bookmark"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-grid class="image-grid">
+  <ion-row class="single-row">
+    <ion-col class="single-image">
+      <img (click)="big($event)" width="100px" height="100px" src="https://picsum.photos/seed/picsum/200/300">
+    </ion-col>
+    <ion-col class="single-image" >
+      <img (click)="big($event)" height="100px" width="100px" src="https://picsum.photos/seed/picsum/200/300">
+    </ion-col>
+    <ion-col class="single-image">
+      <img (click)="big($event)" height="100px" width="100px" src="https://picsum.photos/seed/picsum/200/300">
+    </ion-col>
+  </ion-row>
+
+</ion-grid>

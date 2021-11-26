@@ -1,0 +1,19 @@
+div {
+    background-color: hsl(0, 100%, 49%);
+    border: solid 1px rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    // padding: 10px;
+    // height: 50px;
+    // width: 50px;
+}
+
+ion-grid,ion-col,ion-row{
+    background-color: grey;
+    margin: 0;
+    padding: 2px;
+}
+
+ion-col{
+    border: solid 2p white;
+}
